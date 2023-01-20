@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  background-image: url(wall.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  font-family: "Pacifico";
+  font-size: 7.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 25vh;
+  left: 10%;
+}
+
+#switch {
+  all: unset;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+#switch:checked {
+  background-color: hotpink;
+  outline: 1px solid fuchsia;
+}
+
+#switch:checked ~ h1 {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0px 0px 50px hotpink;
+}
